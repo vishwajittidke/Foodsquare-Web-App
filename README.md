@@ -68,7 +68,7 @@ This repo contains the web app for this system implemented in Django-2.2 with Mo
 - Online Payment Handling
 - Review-Rating Management
 
-Docker Hub Repo: https://hub.docker.com/r/subangkar/foodsquare
+Docker Hub Repo: https://hub.docker.com/vishwajittidke/foodsquare
 
 ***
 
