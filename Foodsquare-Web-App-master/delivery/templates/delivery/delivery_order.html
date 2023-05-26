@@ -1,0 +1,245 @@
+{% extends 'delivery/base.html' %}
+
+{% block header %}
+    <title>Foodsquare </title>
+{% endblock %}
+
+
+{% block body-content %}
+    <div class="page-inner">
+        {% load static %}
+        <div class="col-lg-12 col-md-12">
+            <div class="panel panel-white">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Order List</h4>
+
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+                <div style="height: 5vh">
+
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive project-stats">
+                        {% if request.user.is_suspended %}
+                            <h1 style="color: red">Your account has been suspended</h1>
+                            <h1 style="color: red">Contact Admin at <a href="mailto:{{ request.user.get_suspend_contact_email }}">{{ request.user.get_suspend_contact_email }}</a></h1>
+                        {% else %}
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Order Id</th>
+                                    <th>Restaurant</th>
+                                    <th>Customer</th>
+                                    <th>Order Time</th>
+                                    <th>Payment Type</th>
+                                    <th>Delivery Status</th>
+                                    <th>View Details</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for order in object_list %}
+
+                                    <tr>
+
+                                        <td><a href="{{ order.id }}" class="order_details"> {{ order.id }}</a></td>
+                                        <td>{{ order.branch.branch_name }}</td>
+                                        <td>{{ order.user.username }}</td>
+                                        <td>{{ order.time }} </td>
+                                        <td>
+                                            {% if order.payment.payment_type == "C" %}
+                                                Cash
+                                            {% elif order.payment.payment_type == "O" %}
+                                                Online
+                                            {% endif %}
+                                        </td>
+
+                                        <td>
+
+                                            {% if order.order_status == 'PROCESSING' %}
+                                                <button href="{{ order.id }}" type="button"
+                                                        class="btn btn-danger delivery_status"
+                                                        value="take">Take Delivery
+                                                </button>
+                                            {% elif order.order_status == 'DELIVERING' %}
+                                                <button href="{{ order.id }}" type="button"
+                                                        class="btn btn-success delivery_status"
+                                                        value="deliver">Mark as Delievred
+                                                </button>
+                                            {% endif %}
+
+                                        </td>
+                                        <td>
+                                            <button href="{{ order.id }}" class="order_details btn btn-info">View
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        {% endif %}
+
+
+                        {#rating_modal#}
+                        <div class="modal fade" id="rating_modal" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Rate Customer </h5>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        {% include 'delivery/rate_submit.html' %}
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <script src="{% static 'ajaxRequest.js' %}"></script>
+                        <script>
+                            var csrftoken = getCookie('csrftoken');
+
+                            $.ajaxSetup({
+                                beforeSend: function (xhr, settings) {
+                                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                                    }
+                                }
+                            });
+                            $(document).on('change', '.star-cb-group input', function () {
+
+                                var rate_val = $("input[type='radio'][name='rating']:checked").val();
+                                var csrftoken = getCookie('csrftoken');
+                                $("#star3").prop("checked", true);
+
+                                $.ajax({
+                                    type: "POST",
+                                    headers: {
+                                        "X-CSRFToken": csrftoken
+                                    },
+                                    url: '/submitCustomerRating/',
+                                    data: {
+                                        'order-id': $('#order_id').val(),
+                                        'rating': rate_val
+                                    },
+                                    dataType: 'json',
+                                    success: function (data) {
+                                        location.reload();
+                                    }
+                                });
+
+                            });
+                            $(".delivery_status").click(function () {
+                                if (this.value === 'deliver') {
+                                    document.getElementsByClassName('star-cb-group')[0].innerHTML = "<input type=\"radio\" id=\"rating-5\" name=\"rating\" value=\"5\" /><label for=\"rating-5\">5</label>\n" +
+                                        "      <input type=\"radio\" id=\"rating-4\" name=\"rating\" value=\"4\" checked=\"checked\" /><label for=\"rating-4\">4</label>\n" +
+                                        "      <input type=\"radio\" id=\"rating-3\" name=\"rating\" value=\"3\" /><label for=\"rating-3\">3</label>\n" +
+                                        "      <input type=\"radio\" id=\"rating-2\" name=\"rating\" value=\"2\" /><label for=\"rating-2\">2</label>\n" +
+                                        "      <input type=\"radio\" id=\"rating-1\" name=\"rating\" value=\"1\" /><label for=\"rating-1\">1</label>\n" +
+                                        "      <input type=\"radio\" id=\"rating-0\" name=\"rating\" value=\"0\" class=\"star-cb-clear\" /><label for=\"rating-0\">0</label>";
+                                    $('#order_id').val($(this).attr('href'));
+
+                                    $("#rating_modal").modal();
+                                }
+
+
+                                $.ajax({
+                                    type: "POST",
+                                    headers: {
+                                        "X-CSRFToken": csrftoken
+                                    },
+                                    context: this,
+                                    url: '/applyForDelivery/',
+                                    data: {
+                                        'order_id': $(this).attr('href'),
+                                        'deliveryMan_id': {{ user.id }},
+                                        'delivery_option': this.value
+                                    },
+                                    dataType: 'json',
+                                    success: function (data) {
+                                        if (this.value !== 'deliver') {
+                                            location.reload();
+                                        }
+                                    }
+                                });
+
+                            });
+
+                        </script>
+                    </div>
+                </div>
+
+                {% include 'webAdmin/listViewPagination.html' %}
+            </div>
+        </div>
+
+        {#    Modal #}
+        <div class="modal fade" id="delivery_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+
+            {% include "delivery/delivery_modal.html" %}
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                $(".order_details").click(function (event) {
+                    event.preventDefault();
+                    {#$("#delivery_modal").modal();#}
+
+                    var addressValue = $(this).attr("href");
+                    $.ajax({
+                        type: "GET",
+                        url: "/delivery_info",
+                        data: {
+                            'id': $(this).attr("href")
+                        },
+                        success: function (data) {
+                            {#alert(data);#}
+                            console.log(data);
+                            {#console.log(data);#}
+                            {#alert(data.trade_license);#}
+
+                            $('#delivery_modal').html(data);
+
+
+                            $("#delivery_modal").modal();
+                        }
+                    });
+
+                });
+            });
+        </script>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="delivery_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Rate Delivery </h5>
+
+                </div>
+                <div class="modal-body">
+                    {% include 'customer/rate_submit.html' %}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'customer/js/ajax_upload.js' %}"></script>
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+
+[packages]
+django = "*"
+django-allauth = "*"
+django-debug-toolbar = "*"
+django-extensions = "*"
+django-hosts = "*"
+django-sslserver = "*"
+djangorestframework = "*"
+pillow = "*"
+psycopg2 = "*"
+geopy = "*"
+gunicorn = "*"
+whitenoise = "*"
+dj-database-url = "*"
+
+[requires]
+python_version = "3.7"

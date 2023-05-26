@@ -1,0 +1,60 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="rest_name"></h4>
+            Deliver to {{ order.delivery.address }}
+        </div>
+        <div class="modal-body" id="test_modal">
+            <div class="table-responsive project-stats">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in item_list %}
+
+                        <tr>
+                            <td>{{ item.package.pkg_name }}</td>
+                            <td>{{ item.quantity }}</td>
+                        </tr>
+
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+            Flat No: {{ order.delivery.address_flat_no }}
+            <br>
+            House No: {{ order.delivery.address_house_no }}
+            <br>
+            Road No: {{ order.delivery.address_road_no }}
+            <br>
+            Block: {{ order.delivery.address_block }}
+            <br>
+            Area: {{ order.delivery.address_area }}
+            <br>
+            Contact No: <b>{{ order.mobileNo }}</b>
+            <br> <br>
+            Total Price : {{ price }}
+            <br>
+            Delivery Charge : {{ delivery_charge }}
+            <br> <br>
+            {% if order.user.get_rating != 0 %}
+                Customer Rating: <b>{{ order.user.get_rating }}</b>
+            {% else %}
+                Customer Rating: NEW
+            {% endif %}
+            <br> <br>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>

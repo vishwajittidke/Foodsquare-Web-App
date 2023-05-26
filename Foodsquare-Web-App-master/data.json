@@ -1,0 +1,3263 @@
+[
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "foodsquare.com",
+    "name": "foodsquare"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 2,
+  "fields": {
+    "domain": "foodsquare.net",
+    "name": "foodsquare"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 3,
+  "fields": {
+    "domain": "localhost",
+    "name": "localhost"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 1,
+  "fields": {
+    "name": "bun"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 2,
+  "fields": {
+    "name": "cheese"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 3,
+  "fields": {
+    "name": "mushroom"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 4,
+  "fields": {
+    "name": "chicken "
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 15,
+  "fields": {
+    "name": "sausage"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 16,
+  "fields": {
+    "name": "beef"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 18,
+  "fields": {
+    "name": "vanilla"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 19,
+  "fields": {
+    "name": "chicken"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 20,
+  "fields": {
+    "name": "onion"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 21,
+  "fields": {
+    "name": "sauce"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 22,
+  "fields": {
+    "name": "tomato"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 23,
+  "fields": {
+    "name": "capsicum"
+  }
+},
+{
+  "model": "browse.ingredient",
+  "pk": 24,
+  "fields": {
+    "name": "rice"
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 2,
+  "fields": {
+    "pkg_name": "Chicken Cheese Mushroom Burger",
+    "for_n_persons": 1,
+    "price": 210,
+    "available": true,
+    "image": "menu/cuisine1.jpg",
+    "details": "",
+    "category": "Burger",
+    "restaurant": 1,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 3,
+  "fields": {
+    "pkg_name": "Chicken Cheese Deluxe",
+    "for_n_persons": 1,
+    "price": 280,
+    "available": true,
+    "image": "menu/cuisine1.jpg",
+    "details": "",
+    "category": "Burger",
+    "restaurant": 1,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 5,
+  "fields": {
+    "pkg_name": "Mr. Perfect",
+    "for_n_persons": 1,
+    "price": 180,
+    "available": true,
+    "image": "menu/cuisine6.jpg",
+    "details": "",
+    "category": "Burger",
+    "restaurant": 1,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 6,
+  "fields": {
+    "pkg_name": "Chicken Cheesegroom",
+    "for_n_persons": 1,
+    "price": 220,
+    "available": true,
+    "image": "menu/cuisine1.jpg",
+    "details": "",
+    "category": "Burger",
+    "restaurant": 1,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 7,
+  "fields": {
+    "pkg_name": "Chicken Cheese Burger",
+    "for_n_persons": 1,
+    "price": 280,
+    "available": true,
+    "image": "menu/takeout_chi.jpg",
+    "details": "",
+    "category": "Burger",
+    "restaurant": 2,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 8,
+  "fields": {
+    "pkg_name": "Beef Cheese Burger",
+    "for_n_persons": 1,
+    "price": 320,
+    "available": true,
+    "image": "menu/bww_burger_cheesecurdbacon_2.jpg",
+    "details": "",
+    "category": "Burger",
+    "restaurant": 2,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 9,
+  "fields": {
+    "pkg_name": "BBQ Pizza",
+    "for_n_persons": 1,
+    "price": 720,
+    "available": true,
+    "image": "menu/default.png",
+    "details": "",
+    "category": "Pizza",
+    "restaurant": 2,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 10,
+  "fields": {
+    "pkg_name": "Vegetable Salad",
+    "for_n_persons": 1,
+    "price": 750,
+    "available": true,
+    "image": "menu/default.png",
+    "details": "",
+    "category": "Vegetable",
+    "restaurant": 2,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 11,
+  "fields": {
+    "pkg_name": "Chicken Noodles",
+    "for_n_persons": 1,
+    "price": 350,
+    "available": true,
+    "image": "menu/default.png",
+    "details": "",
+    "category": "Noodles",
+    "restaurant": 2,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.package",
+  "pk": 12,
+  "fields": {
+    "pkg_name": "Crispy Fried Rice",
+    "for_n_persons": 1,
+    "price": 100,
+    "available": true,
+    "image": "menu/fried-rice2_i7zlYKe.jpg",
+    "details": "",
+    "category": "Rice",
+    "restaurant": 9,
+    "is_vegeterian": false
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 1,
+  "fields": {
+    "package": 2,
+    "ingredient": 1
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 2,
+  "fields": {
+    "package": 2,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 3,
+  "fields": {
+    "package": 2,
+    "ingredient": 3
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 4,
+  "fields": {
+    "package": 2,
+    "ingredient": 4
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 8,
+  "fields": {
+    "package": 3,
+    "ingredient": 1
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 9,
+  "fields": {
+    "package": 3,
+    "ingredient": 4
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 10,
+  "fields": {
+    "package": 3,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 11,
+  "fields": {
+    "package": 5,
+    "ingredient": 1
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 12,
+  "fields": {
+    "package": 5,
+    "ingredient": 4
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 13,
+  "fields": {
+    "package": 5,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 14,
+  "fields": {
+    "package": 6,
+    "ingredient": 1
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 15,
+  "fields": {
+    "package": 6,
+    "ingredient": 4
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 16,
+  "fields": {
+    "package": 6,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 17,
+  "fields": {
+    "package": 6,
+    "ingredient": 3
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 18,
+  "fields": {
+    "package": 7,
+    "ingredient": 1
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 19,
+  "fields": {
+    "package": 7,
+    "ingredient": 15
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 20,
+  "fields": {
+    "package": 7,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 21,
+  "fields": {
+    "package": 8,
+    "ingredient": 1
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 22,
+  "fields": {
+    "package": 8,
+    "ingredient": 16
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 23,
+  "fields": {
+    "package": 8,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 24,
+  "fields": {
+    "package": 9,
+    "ingredient": 19
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 25,
+  "fields": {
+    "package": 9,
+    "ingredient": 2
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 26,
+  "fields": {
+    "package": 9,
+    "ingredient": 20
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 27,
+  "fields": {
+    "package": 10,
+    "ingredient": 21
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 28,
+  "fields": {
+    "package": 10,
+    "ingredient": 22
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 29,
+  "fields": {
+    "package": 10,
+    "ingredient": 23
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 30,
+  "fields": {
+    "package": 10,
+    "ingredient": 20
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 31,
+  "fields": {
+    "package": 11,
+    "ingredient": 21
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 32,
+  "fields": {
+    "package": 11,
+    "ingredient": 22
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 33,
+  "fields": {
+    "package": 11,
+    "ingredient": 20
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 34,
+  "fields": {
+    "package": 11,
+    "ingredient": 19
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 35,
+  "fields": {
+    "package": 12,
+    "ingredient": 19
+  }
+},
+{
+  "model": "browse.ingredientlist",
+  "pk": 36,
+  "fields": {
+    "package": 12,
+    "ingredient": 24
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 1,
+  "fields": {
+    "package": 2,
+    "branch": 1,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 2,
+  "fields": {
+    "package": 3,
+    "branch": 1,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 3,
+  "fields": {
+    "package": 5,
+    "branch": 1,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 4,
+  "fields": {
+    "package": 6,
+    "branch": 1,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 5,
+  "fields": {
+    "package": 7,
+    "branch": 3,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 6,
+  "fields": {
+    "package": 8,
+    "branch": 3,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 7,
+  "fields": {
+    "package": 8,
+    "branch": 4,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 8,
+  "fields": {
+    "package": 7,
+    "branch": 4,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 9,
+  "fields": {
+    "package": 9,
+    "branch": 4,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 10,
+  "fields": {
+    "package": 9,
+    "branch": 3,
+    "available": true,
+    "offer_type": "B",
+    "offer_start_date": "2019-09-01",
+    "offer_expire_date": "2019-09-09",
+    "offer_discount": 0,
+    "offer_buy_n": 2,
+    "offer_get_n": 1
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 11,
+  "fields": {
+    "package": 10,
+    "branch": 4,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 12,
+  "fields": {
+    "package": 10,
+    "branch": 3,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 13,
+  "fields": {
+    "package": 11,
+    "branch": 4,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 14,
+  "fields": {
+    "package": 11,
+    "branch": 3,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "browse.packagebranchdetails",
+  "pk": 15,
+  "fields": {
+    "package": 12,
+    "branch": 6,
+    "available": true,
+    "offer_type": "N",
+    "offer_start_date": null,
+    "offer_expire_date": null,
+    "offer_discount": 0,
+    "offer_buy_n": 1,
+    "offer_get_n": 0
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Xm2zvsuzuxeQ$C3XNmDorzoRX9rjFdsGuh3eVVf1AqYzO933lwBv7wT0=",
+    "last_login": "2019-09-12T07:56:34.889Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@localhost",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:12:16.391Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$XtlCygeZRvbb$Sg9jSPagXBuPZySYWOa0TtdG+gnDSN3DkXGatTAaV9U=",
+    "last_login": "2020-08-01T13:19:03.442Z",
+    "is_superuser": false,
+    "username": "subangkar",
+    "first_name": "",
+    "last_name": "",
+    "email": "subangkar.karmaker@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:17:46.653Z",
+    "is_customer": true,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$aWKsJR1KdzTY$yggGvWwI+FP/PUDuLMnGqkRgXp88HgxhAxn3f5HFf0Q=",
+    "last_login": "2019-09-01T06:32:17.494Z",
+    "is_superuser": false,
+    "username": "mrburgeradmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:39:06.748Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$oubzgx78Pluh$MT1NNSmJxOU58qKF28hC3v9FkFe9LwbkNDJ5eX43tFg=",
+    "last_login": "2019-09-14T11:04:51.790Z",
+    "is_superuser": false,
+    "username": "takeoutadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:39:35.505Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$tjcDVC4ffIRE$2YXLtH8SUd2GfVTOSjnqCdY/VAtNie7vF70n5b8LepY=",
+    "last_login": "2019-08-23T11:40:04.772Z",
+    "is_superuser": false,
+    "username": "pizzainnadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:40:04.504Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$gKrAReCBB9L4$ZDH7oWsRb9rSHzQqvs7a+z3uh8iD0bDjuoLdYpXEP1E=",
+    "last_login": "2019-09-01T06:53:25.066Z",
+    "is_superuser": false,
+    "username": "pizzaguyadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:40:51.474Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$vizOZtUUU11e$7vy2zVyInCVq2qhragWm2kWV9ByMiOWMM05+yWiTO2A=",
+    "last_login": "2019-09-01T06:32:57.224Z",
+    "is_superuser": false,
+    "username": "mrburgerkhilgaonadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T11:42:39.591Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": true,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$ZN6PbqRkuCwx$dyksgAopnM6NeYXxJsV/WEvQitp0YIemgVBhhNF1xgs=",
+    "last_login": "2019-09-14T11:02:50.827Z",
+    "is_superuser": false,
+    "username": "takeoutdmdadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T12:23:26.369Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": true,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$M1fsFr2Wmi5d$429IfWx+pBMbjWrmUvglVWHAjpiSCHRdo/vsilT4518=",
+    "last_login": "2019-08-23T12:40:26.648Z",
+    "is_superuser": false,
+    "username": "takeoutgulshanadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T12:40:26.507Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": true,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$uJymb3udKhsZ$pH3aGokaQu2jdBeGdjo1pZx6w9arysSYl3Ijr9LUrsk=",
+    "last_login": "2019-08-23T14:26:31.097Z",
+    "is_superuser": false,
+    "username": "intruder",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-23T14:26:30.865Z",
+    "is_customer": true,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$l5XXlsNVgsQ0$7dULSFZ2TxEQM22L+tzEq+mbIKuGoVKKFBJyXBuJrvM=",
+    "last_login": "2019-09-08T08:06:41.889Z",
+    "is_superuser": false,
+    "username": "saquib",
+    "first_name": "",
+    "last_name": "",
+    "email": "mohaimin0312sam@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-08-31T04:16:28.967Z",
+    "is_customer": true,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$jhaHeUmHbww3$A6iEIpioIGclz3O6zbuJdiahLSFNcP+UVMKNycW9cFU=",
+    "last_login": "2019-09-01T05:13:21.115Z",
+    "is_superuser": false,
+    "username": "khg1",
+    "first_name": "",
+    "last_name": "",
+    "email": "khg1@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-01T05:13:21.003Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": true,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$ofYtG891uWS8$q6VQfW0FJdT1OJFAGL/V81VRB57osNwqepqzyOgusiA=",
+    "last_login": "2019-09-01T06:31:20.130Z",
+    "is_superuser": false,
+    "username": "khg2",
+    "first_name": "",
+    "last_name": "",
+    "email": "khg2@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-01T06:31:19.981Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": true,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$ccnI2Lr3gdQB$Qrg0xjzobXE1JowMVGqPpPC6MkTdSUDe9zMF/3CNVUg=",
+    "last_login": "2019-09-01T06:40:46.687Z",
+    "is_superuser": false,
+    "username": "dmd1",
+    "first_name": "",
+    "last_name": "",
+    "email": "dmd1@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-01T06:40:46.586Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": true,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$lGRrPWmrI2Pu$Q5QaPHhi7jTo+80Iqgq2muoaJNeWCw29u7Z6igpOGHc=",
+    "last_login": "2019-09-14T12:01:49.642Z",
+    "is_superuser": false,
+    "username": "dmd2",
+    "first_name": "",
+    "last_name": "",
+    "email": "dmd2@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-01T06:45:04.733Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": true,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$H7M4Jn0obj1H$Bk1EEkLIiiF1APJCqyWI5/nLlEbyCBVn/df0Fdc+F/8=",
+    "last_login": "2019-09-01T06:47:43.264Z",
+    "is_superuser": false,
+    "username": "dmd3",
+    "first_name": "",
+    "last_name": "",
+    "email": "dmd3@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-01T06:47:43.160Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": false,
+    "is_delivery_man": true,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 18,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$TtffPJpFQdOJ$Yc7Ok+xWg6r8PCfhBjUNn3wuY+JzpjH5OW3d3qaTpuM=",
+    "last_login": "2019-09-01T07:44:57.184Z",
+    "is_superuser": false,
+    "username": "pizzaguydmdadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-01T07:44:57.080Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": true,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$r2HGRIdGhe1J$smgtaT75tE5W5sbk4g6na3hjjDTzJDbfAh2fe4vaydo=",
+    "last_login": "2019-09-08T07:37:24.290Z",
+    "is_superuser": false,
+    "username": "absolutebbqadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "absolutebbqadmin@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-08T07:37:24.176Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$5UhoQzAOJmEJ$POAATDn9rFwPn5zofb1KNzGzx4577nBxOIyzhJm+NDc=",
+    "last_login": "2019-09-08T07:39:49.010Z",
+    "is_superuser": false,
+    "username": "cafeloginadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "cafeloginadmin@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-08T07:39:48.908Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 21,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$AqGm95isyF75$jHshN6IPSOFXyU/ijOVjTGEP0HUem41KLZTxSv6x/s8=",
+    "last_login": "2019-09-08T07:41:00.755Z",
+    "is_superuser": false,
+    "username": "cafedarbaradmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "cafedarbaradmin@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-08T07:41:00.665Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 22,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$HBRHqzfv0hNY$zBXV4ShsN/njjpdiA4rx7S3fNQs80LwA6HgO/b+ebgA=",
+    "last_login": "2019-09-08T07:43:58.984Z",
+    "is_superuser": false,
+    "username": "boomerscafeadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "boomerscafeadmin@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-08T07:43:58.875Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 26,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$YqP0UFExwB1I$HZ2SqaDOYHJ6lG2dhndPpeKB3bGk2IGqGN3MjX3/614=",
+    "last_login": "2019-09-12T08:07:12.814Z",
+    "is_superuser": false,
+    "username": "foodfairadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "1505015.skb@ugrad.cse.buet.ac.bd",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-12T07:56:09.579Z",
+    "is_customer": false,
+    "is_manager": true,
+    "is_branch_manager": false,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 27,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$97xcgs8akh9u$ohA0tqdRQTQHdouddmspQT6/W6oZVhsEAhGIxRlbJEI=",
+    "last_login": "2019-09-12T10:57:02.348Z",
+    "is_superuser": false,
+    "username": "foodfairpalashiadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "a@b.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-09-12T10:57:01.341Z",
+    "is_customer": false,
+    "is_manager": false,
+    "is_branch_manager": true,
+    "is_delivery_man": false,
+    "is_suspended": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "first_name": "Subangkar",
+    "last_name": "Karmaker",
+    "address": "Shantibag",
+    "avatar": "avatars/cute-cat-cartoon-character-illustration-34141795.jpg"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": 11,
+    "first_name": null,
+    "last_name": null,
+    "address": null,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": 12,
+    "first_name": null,
+    "last_name": null,
+    "address": null,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 1,
+  "fields": {
+    "user": 3,
+    "restaurant_name": "Mr. Burger",
+    "restaurant_key": "pj7qzsfPEH",
+    "trade_license": "12324124",
+    "restaurantImg": "restaurant_img/mrburger.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 2,
+  "fields": {
+    "user": 4,
+    "restaurant_name": "Takeout",
+    "restaurant_key": "dHTGTgJnYB",
+    "trade_license": "0987644",
+    "restaurantImg": "restaurant_img/takeout.jpg"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 3,
+  "fields": {
+    "user": 5,
+    "restaurant_name": "Pizza Inn",
+    "restaurant_key": "wr4q3bvxOn",
+    "trade_license": "26478234",
+    "restaurantImg": "restaurant_img/pizzainn.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 4,
+  "fields": {
+    "user": 6,
+    "restaurant_name": "Pizza Guy",
+    "restaurant_key": "9Il1K4EIQH",
+    "trade_license": "123456",
+    "restaurantImg": "restaurant_img/pizzaguy.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 5,
+  "fields": {
+    "user": 19,
+    "restaurant_name": "Absolute BBQ",
+    "restaurant_key": "Zjp3fAorse",
+    "trade_license": "123481",
+    "restaurantImg": "restaurant_img/default.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 6,
+  "fields": {
+    "user": 20,
+    "restaurant_name": "Cafe Login",
+    "restaurant_key": "tyWuc5fJ7P",
+    "trade_license": "7562349",
+    "restaurantImg": "restaurant_img/default.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 7,
+  "fields": {
+    "user": 21,
+    "restaurant_name": "Cafe Darbar",
+    "restaurant_key": "Pv1AwMTO1s",
+    "trade_license": "8761324",
+    "restaurantImg": "restaurant_img/default.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 8,
+  "fields": {
+    "user": 22,
+    "restaurant_name": "Boomers Cafe",
+    "restaurant_key": "6URzWnqjPh",
+    "trade_license": "7652349",
+    "restaurantImg": "restaurant_img/default.png"
+  }
+},
+{
+  "model": "accounts.restaurant",
+  "pk": 9,
+  "fields": {
+    "user": 26,
+    "restaurant_name": "Food Fair",
+    "restaurant_key": "91eNqHwA93",
+    "trade_license": "01813615131725",
+    "restaurantImg": "restaurant_img/foodfair.jpg"
+  }
+},
+{
+  "model": "accounts.restaurantbranch",
+  "pk": 1,
+  "fields": {
+    "user": 7,
+    "branch_name": "Mr. Burger Khilgaon",
+    "branch_location": "23.75232600,90.42021880",
+    "branch_location_details": "",
+    "location_area": "Khilgaaon",
+    "branch_phonenum": "",
+    "branch_mobilenum": "",
+    "branch_email": "",
+    "image": "restaurant_img/default.png",
+    "running": false,
+    "opening_time": 9.0,
+    "closing_time": 23.0,
+    "restaurant": 1
+  }
+},
+{
+  "model": "accounts.restaurantbranch",
+  "pk": 3,
+  "fields": {
+    "user": 9,
+    "branch_name": "Takeout Dhanmondi",
+    "branch_location": "23.74458820,90.37204430",
+    "branch_location_details": "",
+    "location_area": "Lalmatia",
+    "branch_phonenum": "",
+    "branch_mobilenum": "",
+    "branch_email": "",
+    "image": "restaurant_img/default.png",
+    "running": false,
+    "opening_time": 9.0,
+    "closing_time": 23.0,
+    "restaurant": 2
+  }
+},
+{
+  "model": "accounts.restaurantbranch",
+  "pk": 4,
+  "fields": {
+    "user": 10,
+    "branch_name": "Takeout Gulshan",
+    "branch_location": "23.79211490,90.40227390",
+    "branch_location_details": "",
+    "location_area": "Gulshan",
+    "branch_phonenum": "",
+    "branch_mobilenum": "",
+    "branch_email": "",
+    "image": "restaurant_img/default.png",
+    "running": false,
+    "opening_time": 9.0,
+    "closing_time": 23.0,
+    "restaurant": 2
+  }
+},
+{
+  "model": "accounts.restaurantbranch",
+  "pk": 5,
+  "fields": {
+    "user": 18,
+    "branch_name": "Pizza Guy Dhanmondi",
+    "branch_location": "23.75042397,450.37312210",
+    "branch_location_details": "",
+    "location_area": "Dhanmondi R/A",
+    "branch_phonenum": "",
+    "branch_mobilenum": "",
+    "branch_email": "",
+    "image": "restaurant_img/default.png",
+    "running": false,
+    "opening_time": 9.0,
+    "closing_time": 23.0,
+    "restaurant": 4
+  }
+},
+{
+  "model": "accounts.restaurantbranch",
+  "pk": 6,
+  "fields": {
+    "user": 27,
+    "branch_name": "Food Fair Palashi",
+    "branch_location": "23.72698600,90.38963910",
+    "branch_location_details": "",
+    "location_area": "Siddikbazar",
+    "branch_phonenum": "",
+    "branch_mobilenum": "",
+    "branch_email": "",
+    "image": "restaurant_img/default.png",
+    "running": false,
+    "opening_time": 9.0,
+    "closing_time": 23.0,
+    "restaurant": 9
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 1,
+  "fields": {
+    "price": 825.0,
+    "payment_type": "O",
+    "payment_status": "D",
+    "bkash_ref": "89DaNN4KIe"
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 2,
+  "fields": {
+    "price": 308.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 3,
+  "fields": {
+    "price": 924.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 4,
+  "fields": {
+    "price": 704.0,
+    "payment_type": "O",
+    "payment_status": "D",
+    "bkash_ref": "bqaSeX9bJC"
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 5,
+  "fields": {
+    "price": 704.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 6,
+  "fields": {
+    "price": 308.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 7,
+  "fields": {
+    "price": 1012.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 8,
+  "fields": {
+    "price": 352.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 9,
+  "fields": {
+    "price": 385.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 10,
+  "fields": {
+    "price": 308.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 11,
+  "fields": {
+    "price": 792.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 12,
+  "fields": {
+    "price": 616.0,
+    "payment_type": "C",
+    "payment_status": "D",
+    "bkash_ref": null
+  }
+},
+{
+  "model": "accounts.payment",
+  "pk": 13,
+  "fields": {
+    "price": 2662.0,
+    "payment_type": "O",
+    "payment_status": "D",
+    "bkash_ref": "lonMtFSBVn"
+  }
+},
+{
+  "model": "accounts.deliveryman",
+  "pk": 1,
+  "fields": {
+    "name": "khg1",
+    "contactNum": "1234",
+    "address": "Khilgaaon",
+    "nid": "1267523",
+    "user": 13,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.deliveryman",
+  "pk": 2,
+  "fields": {
+    "name": "khg2",
+    "contactNum": "654123",
+    "address": "Khilgaaon",
+    "nid": "1234",
+    "user": 14,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.deliveryman",
+  "pk": 3,
+  "fields": {
+    "name": "dmd1",
+    "contactNum": "8717682",
+    "address": "",
+    "nid": "122785",
+    "user": 15,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.deliveryman",
+  "pk": 4,
+  "fields": {
+    "name": "dmd2",
+    "contactNum": "182652",
+    "address": "Lalmatia",
+    "nid": "76412",
+    "user": 16,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.deliveryman",
+  "pk": 5,
+  "fields": {
+    "name": "dmd3",
+    "contactNum": "8756213",
+    "address": "Lalmatia",
+    "nid": "56412",
+    "user": 17,
+    "avatar": "avatars/default.png"
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 1,
+  "fields": {
+    "address": "",
+    "address_desc": ", , , ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-08T06:57:07.080Z",
+    "rating_user": 2,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 2,
+  "fields": {
+    "address": "",
+    "address_desc": ", , , ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T06:51:42.005Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 4
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 3,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": ", 12, 13, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:12:57.531Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 4,
+  "fields": {
+    "address": "Dhanmondi",
+    "address_desc": "1, 65, 10, 1",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:17:32.733Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 5,
+  "fields": {
+    "address": "New Market",
+    "address_desc": "2, 15, 21, 1",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:31:16.224Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 6,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": "14, 12, 13, 11",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:35:14.600Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 7,
+  "fields": {
+    "address": "Dhanmondi",
+    "address_desc": "7, 4, 1, 1",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:35:14.606Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 8,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": ", 7, 1, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:35:14.644Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 9,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": ", 81, 1, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:39:44.903Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 4
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 10,
+  "fields": {
+    "address": "Dhanmondi",
+    "address_desc": ", 61, 17, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-01T08:39:19.418Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 5
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 11,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": ", 43, 1, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-08T07:49:02.898Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": 4
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 12,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": ", 14, 1, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-08T08:14:40.262Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": null
+  }
+},
+{
+  "model": "accounts.delivery",
+  "pk": 13,
+  "fields": {
+    "address": "Azimpur",
+    "address_desc": ", 17, 1, ",
+    "location": "0,0",
+    "charge": 50.0,
+    "time": "2019-09-08T08:21:33.037Z",
+    "rating_user": null,
+    "rating_deliveryman": null,
+    "deliveryman": null
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 1,
+  "fields": {
+    "time": "2019-09-01T08:20:05.514Z",
+    "user": 12,
+    "delivery": 1,
+    "payment": 1,
+    "branch": 3,
+    "mobileNo": "",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 2,
+  "fields": {
+    "time": "2019-09-01T08:24:19.609Z",
+    "user": 12,
+    "delivery": 2,
+    "payment": 2,
+    "branch": 3,
+    "mobileNo": "",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 3,
+  "fields": {
+    "time": "2019-09-01T08:20:05.543Z",
+    "user": 12,
+    "delivery": 3,
+    "payment": 3,
+    "branch": 3,
+    "mobileNo": "876123",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 4,
+  "fields": {
+    "time": "2019-09-01T08:20:05.557Z",
+    "user": 12,
+    "delivery": 4,
+    "payment": 4,
+    "branch": 3,
+    "mobileNo": "01928787192",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 5,
+  "fields": {
+    "time": "2019-09-01T08:31:27.128Z",
+    "user": 12,
+    "delivery": 5,
+    "payment": 5,
+    "branch": 3,
+    "mobileNo": "998162",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 6,
+  "fields": {
+    "time": "2019-09-01T08:35:14.614Z",
+    "user": 12,
+    "delivery": 6,
+    "payment": 6,
+    "branch": 3,
+    "mobileNo": "087123",
+    "order_status": "DELIVERING"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 7,
+  "fields": {
+    "time": "2019-09-01T08:35:14.618Z",
+    "user": 12,
+    "delivery": 7,
+    "payment": 7,
+    "branch": 3,
+    "mobileNo": "0178263",
+    "order_status": "DELIVERING"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 8,
+  "fields": {
+    "time": "2019-09-01T08:35:14.654Z",
+    "user": 12,
+    "delivery": 8,
+    "payment": 8,
+    "branch": 3,
+    "mobileNo": "9928634",
+    "order_status": "DELIVERING"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 9,
+  "fields": {
+    "time": "2019-09-08T07:49:41.282Z",
+    "user": 12,
+    "delivery": 9,
+    "payment": 9,
+    "branch": 3,
+    "mobileNo": "0917234",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 10,
+  "fields": {
+    "time": "2019-09-01T08:40:22.537Z",
+    "user": 12,
+    "delivery": 10,
+    "payment": 10,
+    "branch": 3,
+    "mobileNo": "097124",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 11,
+  "fields": {
+    "time": "2019-09-08T07:53:36.770Z",
+    "user": 12,
+    "delivery": 11,
+    "payment": 11,
+    "branch": 3,
+    "mobileNo": "0297834",
+    "order_status": "DELIVERED"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 12,
+  "fields": {
+    "time": "2019-09-08T08:22:38.097Z",
+    "user": 12,
+    "delivery": 12,
+    "payment": 12,
+    "branch": 3,
+    "mobileNo": "98124",
+    "order_status": "PROCESSING"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 13,
+  "fields": {
+    "time": "2019-09-08T08:22:43.898Z",
+    "user": 12,
+    "delivery": 13,
+    "payment": 13,
+    "branch": 3,
+    "mobileNo": "987124",
+    "order_status": "PROCESSING"
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "package": 10,
+    "quantity": 1,
+    "price": 750.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "package": 7,
+    "quantity": 1,
+    "price": 280.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "package": 7,
+    "quantity": 3,
+    "price": 840.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "package": 8,
+    "quantity": 2,
+    "price": 640.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "package": 8,
+    "quantity": 2,
+    "price": 640.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "package": 7,
+    "quantity": 1,
+    "price": 280.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "package": 7,
+    "quantity": 1,
+    "price": 280.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 8,
+  "fields": {
+    "order": 7,
+    "package": 8,
+    "quantity": 2,
+    "price": 640.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 9,
+  "fields": {
+    "order": 8,
+    "package": 8,
+    "quantity": 1,
+    "price": 320.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 10,
+  "fields": {
+    "order": 9,
+    "package": 11,
+    "quantity": 1,
+    "price": 350.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 11,
+  "fields": {
+    "order": 10,
+    "package": 7,
+    "quantity": 1,
+    "price": 280.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 12,
+  "fields": {
+    "order": 11,
+    "package": 9,
+    "quantity": 1,
+    "price": 720.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 13,
+  "fields": {
+    "order": 12,
+    "package": 7,
+    "quantity": 2,
+    "price": 560.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 14,
+  "fields": {
+    "order": 13,
+    "package": 11,
+    "quantity": 2,
+    "price": 700.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 15,
+  "fields": {
+    "order": 13,
+    "package": 7,
+    "quantity": 1,
+    "price": 280.0
+  }
+},
+{
+  "model": "accounts.orderpackagelist",
+  "pk": 16,
+  "fields": {
+    "order": 13,
+    "package": 9,
+    "quantity": 3,
+    "price": 1440.0
+  }
+},
+{
+  "model": "webAdmin.config",
+  "pk": 1,
+  "fields": {
+    "key": "delivery_charge",
+    "value": "10"
+  }
+},
+{
+  "model": "webAdmin.config",
+  "pk": 3,
+  "fields": {
+    "key": "items_per_page",
+    "value": "6"
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 1,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-24T18:25:06.102Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.009Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 2,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-24T18:29:32.546Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.126Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 3,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-24T18:40:52.628Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.159Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 4,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-24T18:42:26.217Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.181Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 5,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-24T18:42:27.653Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.204Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 6,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-24T18:42:28.403Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.237Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 7,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T05:26:23.552Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.272Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 8,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T05:29:10.365Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.303Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 9,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T05:33:25.796Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.337Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 10,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T05:40:41.418Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.370Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 11,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T06:15:17.462Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.402Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 12,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T06:33:24.621Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.424Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 13,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:01:54.534Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.447Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 14,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:06:06.302Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.469Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 15,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:06:07.128Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.492Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 16,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:08:47.537Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.525Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 17,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:08:48.319Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.558Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 18,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:09:39.222Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.592Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 19,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T07:09:40.199Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.624Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 20,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:16:24.503Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.646Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 21,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:16:49.209Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.725Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 22,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:16:50.607Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.790Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 23,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:25:45.016Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.867Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 24,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:25:45.889Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.903Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 25,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:27:37.937Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.922Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 26,
+  "fields": {
+    "message": "You have a new notification",
+    "time": "2019-08-25T08:27:38.675Z",
+    "read": true,
+    "read_time": "2020-08-01T07:19:10.944Z",
+    "user": 2
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 27,
+  "fields": {
+    "message": "Your order:1 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-08-31T05:17:20.748Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.810Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 28,
+  "fields": {
+    "message": "Your order:1 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-08-31T05:21:21.841Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.809Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 29,
+  "fields": {
+    "message": "Your order:1 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T06:47:51.698Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.863Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 30,
+  "fields": {
+    "message": "Your order:2 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T06:49:02.582Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.862Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 31,
+  "fields": {
+    "message": "Your order:2 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T06:51:12.269Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.859Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 32,
+  "fields": {
+    "message": "Your order:2 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T06:51:38.557Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.856Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 33,
+  "fields": {
+    "message": "Your order:2 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T06:51:42.013Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.870Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 34,
+  "fields": {
+    "message": "Your order:3 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T07:41:42.563Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.867Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 35,
+  "fields": {
+    "message": "Your order:3 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:12:23.247Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.864Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 36,
+  "fields": {
+    "message": "Your order: 3 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:12:57.539Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.866Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 37,
+  "fields": {
+    "message": "Your order:4 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:16:50.958Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.814Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 38,
+  "fields": {
+    "message": "Your order:4 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:16:58.676Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.816Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 39,
+  "fields": {
+    "message": "Your order: 4 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:17:32.743Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.818Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 40,
+  "fields": {
+    "message": "Your order: 1 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-01T08:20:05.530Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.820Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 41,
+  "fields": {
+    "message": "Your order: 3 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-01T08:20:05.558Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.823Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 42,
+  "fields": {
+    "message": "Your order: 4 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-01T08:20:05.566Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.825Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 43,
+  "fields": {
+    "message": "Your order: 2 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-01T08:24:19.620Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.827Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 44,
+  "fields": {
+    "message": "Your order:5 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:30:06.303Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.836Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 45,
+  "fields": {
+    "message": "Your order:5 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:31:02.970Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.838Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 46,
+  "fields": {
+    "message": "Your order: 5 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:31:16.234Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.839Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 47,
+  "fields": {
+    "message": "Your order: 5 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-01T08:31:27.137Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.767Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 48,
+  "fields": {
+    "message": "Your order:6 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:33:18.094Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.805Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 49,
+  "fields": {
+    "message": "Your order:7 from Takeout Dhanmondi with 2 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:34:02.548Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.807Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 50,
+  "fields": {
+    "message": "Your order:8 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:34:32.713Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.811Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 51,
+  "fields": {
+    "message": "Your order:6 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:34:38.664Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.813Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 52,
+  "fields": {
+    "message": "Your order:8 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:34:38.695Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.828Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 53,
+  "fields": {
+    "message": "Your order:7 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:34:38.698Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.830Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 54,
+  "fields": {
+    "message": "Your order: 7 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:35:14.629Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.832Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 55,
+  "fields": {
+    "message": "Your order: 6 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:35:14.647Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.833Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 56,
+  "fields": {
+    "message": "Your order: 8 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:35:14.669Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.835Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 57,
+  "fields": {
+    "message": "Your order:9 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:37:13.260Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.841Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 58,
+  "fields": {
+    "message": "Your order:10 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:37:55.553Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.847Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 59,
+  "fields": {
+    "message": "Your order:11 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-01T08:38:21.578Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.852Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 60,
+  "fields": {
+    "message": "Your order:10 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:38:53.856Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.853Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 61,
+  "fields": {
+    "message": "Your order:9 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:38:58.285Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.855Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 62,
+  "fields": {
+    "message": "Your order:11 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-01T08:39:00.425Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.873Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 63,
+  "fields": {
+    "message": "Your order: 10 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:39:19.434Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.874Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 64,
+  "fields": {
+    "message": "Your order: 9 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-01T08:39:44.916Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.876Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 65,
+  "fields": {
+    "message": "Your order: 10 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-01T08:40:22.544Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.877Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 66,
+  "fields": {
+    "message": "Your order:11 from Takeout Dhanmondi has been proceeded to deliver.\nWait for deliveryman to reach at your delivery address",
+    "time": "2019-09-08T07:49:02.912Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.880Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 67,
+  "fields": {
+    "message": "Your order:9 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-08T07:49:41.291Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.883Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 68,
+  "fields": {
+    "message": "Your order:11 from Takeout Dhanmondi was delivered to your delivery address",
+    "time": "2019-09-08T07:53:36.781Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.887Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 69,
+  "fields": {
+    "message": "Your order:12 from Takeout Dhanmondi with 1 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-08T08:14:40.286Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.890Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 70,
+  "fields": {
+    "message": "Your order: 13 from Takeout Dhanmondi with 3 items has been placed in manager's queue for confirmation.",
+    "time": "2019-09-08T08:21:33.069Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.891Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 71,
+  "fields": {
+    "message": "Your order:12 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-08T08:22:38.108Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.892Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 72,
+  "fields": {
+    "message": "Your order:13 from Takeout Dhanmondi has been confirmed and pending for delivery.",
+    "time": "2019-09-08T08:22:43.908Z",
+    "read": true,
+    "read_time": "2019-09-08T08:24:46.893Z",
+    "user": 12
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 73,
+  "fields": {
+    "message": " You are admin ",
+    "time": "2019-09-12T12:51:33.592Z",
+    "read": true,
+    "read_time": "2019-09-12T12:52:21.105Z",
+    "user": 1
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 74,
+  "fields": {
+    "message": "you are one of the admins",
+    "time": "2019-09-12T12:52:13.538Z",
+    "read": true,
+    "read_time": "2019-09-12T12:52:21.111Z",
+    "user": 1
+  }
+},
+{
+  "model": "customer.notification",
+  "pk": 75,
+  "fields": {
+    "message": " hey food fair ",
+    "time": "2019-09-12T12:53:48.426Z",
+    "read": true,
+    "read_time": "2019-09-12T12:53:57.791Z",
+    "user": 26
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 1,
+  "fields": {
+    "provider": "facebook",
+    "name": "foodsquare",
+    "client_id": "2213513975398382",
+    "secret": "13ff209e35f44dba1091ac0754eae339",
+    "key": "",
+    "sites": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "browse.branchcommentreact",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "user": 2,
+    "liked": true,
+    "disliked": false
+  }
+},
+{
+  "model": "browse.branchcomment",
+  "pk": 1,
+  "fields": {
+    "comment": "This is the best restaurant in this area",
+    "time": "2019-08-25T06:25:25.766Z",
+    "branch": 1,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagecommentreact",
+  "pk": 1,
+  "fields": {
+    "post": 3,
+    "user": 2,
+    "liked": true,
+    "disliked": false
+  }
+},
+{
+  "model": "browse.packagecommentreact",
+  "pk": 2,
+  "fields": {
+    "post": 4,
+    "user": 2,
+    "liked": true,
+    "disliked": false
+  }
+},
+{
+  "model": "browse.packagecommentreact",
+  "pk": 3,
+  "fields": {
+    "post": 4,
+    "user": 12,
+    "liked": false,
+    "disliked": true
+  }
+},
+{
+  "model": "browse.packagecommentreact",
+  "pk": 4,
+  "fields": {
+    "post": 5,
+    "user": 12,
+    "liked": false,
+    "disliked": true
+  }
+},
+{
+  "model": "browse.packagecommentreact",
+  "pk": 5,
+  "fields": {
+    "post": 6,
+    "user": 2,
+    "liked": true,
+    "disliked": false
+  }
+},
+{
+  "model": "browse.packagecomment",
+  "pk": 1,
+  "fields": {
+    "comment": "This is a very good item",
+    "time": "2019-08-23T14:13:55.175Z",
+    "package": 7,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagecomment",
+  "pk": 2,
+  "fields": {
+    "comment": "This is waste of money !!!!",
+    "time": "2019-08-23T14:27:09.646Z",
+    "package": 7,
+    "user": 11
+  }
+},
+{
+  "model": "browse.packagecomment",
+  "pk": 3,
+  "fields": {
+    "comment": "This is very good",
+    "time": "2019-08-25T05:49:52.941Z",
+    "package": 2,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagecomment",
+  "pk": 4,
+  "fields": {
+    "comment": "This is the best burger you will ever eat. :D",
+    "time": "2019-08-25T06:19:00.644Z",
+    "package": 6,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagecomment",
+  "pk": 5,
+  "fields": {
+    "comment": "",
+    "time": "2019-08-31T05:05:31.548Z",
+    "package": 6,
+    "user": 12
+  }
+},
+{
+  "model": "browse.packagecomment",
+  "pk": 6,
+  "fields": {
+    "comment": "Good comparing to price",
+    "time": "2019-09-13T16:56:27.416Z",
+    "package": 12,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 3,
+  "fields": {
+    "rating": 5,
+    "package": 7,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 4,
+  "fields": {
+    "rating": 3,
+    "package": 7,
+    "user": 11
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 5,
+  "fields": {
+    "rating": 5,
+    "package": 2,
+    "user": 2
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 6,
+  "fields": {
+    "rating": 3,
+    "package": 6,
+    "user": 12
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 7,
+  "fields": {
+    "rating": 4,
+    "package": 7,
+    "user": 12
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 8,
+  "fields": {
+    "rating": 5,
+    "package": 5,
+    "user": 12
+  }
+},
+{
+  "model": "browse.packagerating",
+  "pk": 9,
+  "fields": {
+    "rating": 5,
+    "package": 12,
+    "user": 2
+  }
+}
+]

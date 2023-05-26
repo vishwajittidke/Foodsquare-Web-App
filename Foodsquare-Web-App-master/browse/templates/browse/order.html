@@ -1,0 +1,512 @@
+{% extends 'browse/base-banner.html' %}
+{% load static %}
+
+{% block header %}
+    <title>Cuisines | FoodSquare</title>
+
+    <!--price range-->
+    <link rel="stylesheet" type="text/css" href="{% static 'browse/toys_shop/css/jquery-ui1.css' %}">
+    <!--//price range-->
+{% endblock %}
+
+
+{% block body-js %}
+    {#    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>#}
+    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">#}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- price range (top products) -->
+    <script src="{% static 'browse/toys_shop/js/jquery-ui.js' %}"></script>
+    <script>
+        //<![CDATA[
+        $(window).load(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 2000,
+                values: [10, 600],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+        }); //]]>
+    </script>
+    <!-- //price range (top products) -->
+{% endblock %}
+
+{% block body-content %}
+    <!-- short -->
+    <div class="using-border py-3">
+        <div class="inner_breadcrumb  ml-4">
+            <ul class="short_ls">
+                <li>
+                    <a href="/">Home</a>
+                    <span>/ /</span>
+                </li>
+                <li>Shop Now</li>
+            </ul>
+        </div>
+    </div>
+    <!-- //short-->
+    <!--show Now-->
+    <!--show Now-->
+    <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+        <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Cuisine List</h3>
+            <div class="row">
+                <div class="side-bar col-lg-3">
+
+                    <div class="search-hotel">
+
+                        <input type="search" placeholder="Product name..." id="menu_search" name="menu_search">
+
+                    </div>
+                    <!-- price range -->
+                    <div class="price_range">
+                        <h3 class="agileits-sear-head">Price range</h3>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" id="min_range" placeholder="min" style="width: 100%">
+
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" id="max_range" placeholder="max" style="width: 100%">
+
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-danger" id="get_menus">
+                                    <i class="fas fa-paper-plane"></i>Get
+                                </button>
+
+                            </div>
+                        </div>
+
+                    </div>
+{#                    <div style="height: 1vh"></div>#}
+{#                    <div>#}
+{#                        <div class="row">#}
+{#                            <div class="side-bar col-lg-12">#}
+{#                                <style>#}
+{#                                    /* The radio_container */#}
+{#                                    .radio_container {#}
+{#                                        display: block;#}
+{#                                        position: relative;#}
+{#                                        padding-left: 35px;#}
+{#                                        margin-bottom: 12px;#}
+{#                                        cursor: pointer;#}
+{#                                        font-size: 15px;#}
+{#                                        -webkit-user-select: none;#}
+{#                                        -moz-user-select: none;#}
+{#                                        -ms-user-select: none;#}
+{#                                        user-select: none;#}
+{#                                    }#}
+{##}
+{#                                    /* Hide the browser's default radio button */#}
+{#                                    .radio_container input {#}
+{#                                        position: absolute;#}
+{#                                        opacity: 0;#}
+{#                                        cursor: pointer;#}
+{#                                    }#}
+{##}
+{#                                    /* Create a custom radio button */#}
+{#                                    .checkmark {#}
+{#                                        position: absolute;#}
+{#                                        top: 0;#}
+{#                                        left: 0;#}
+{#                                        height: 25px;#}
+{#                                        width: 25px;#}
+{#                                        background-color: #eee;#}
+{#                                        border-radius: 50%;#}
+{#                                    }#}
+{##}
+{#                                    /* On mouse-over, add a grey background color */#}
+{#                                    .radio_container:hover input ~ .checkmark {#}
+{#                                        background-color: #ccc;#}
+{#                                    }#}
+{##}
+{#                                    /* When the radio button is checked, add a blue background */#}
+{#                                    .radio_container input:checked ~ .checkmark {#}
+{#                                        background-color: #2196F3;#}
+{#                                    }#}
+{##}
+{#                                    /* Create the indicator (the dot/circle - hidden when not checked) */#}
+{#                                    .checkmark:after {#}
+{#                                        content: "";#}
+{#                                        position: absolute;#}
+{#                                        display: none;#}
+{#                                    }#}
+{##}
+{#                                    /* Show the indicator (dot/circle) when checked */#}
+{#                                    .radio_container input:checked ~ .checkmark:after {#}
+{#                                        display: block;#}
+{#                                    }#}
+{##}
+{#                                    /* Style the indicator (dot/circle) */#}
+{#                                    .radio_container .checkmark:after {#}
+{#                                        top: 9px;#}
+{#                                        left: 9px;#}
+{#                                        width: 8px;#}
+{#                                        height: 8px;#}
+{#                                        border-radius: 50%;#}
+{#                                        background: white;#}
+{#                                    }#}
+{#                                </style>#}
+{#                                <div>#}
+{#                                    <label class="radio_container">Show only offer#}
+{#                                        <input type="radio" name="show" value="offer" class="offer_radio" >#}
+{#                                        <span class="checkmark"></span>#}
+{#                                    </label>#}
+{#                                    <label class="radio_container">Show all#}
+{#                                        <input type="radio" name="show" value="all" class="offer_radio"#}
+{#                                               checked="checked">#}
+{#                                        <span class="checkmark"></span>#}
+{#                                    </label>#}
+{##}
+{##}
+{#                                </div>#}
+{#                                <!-- //reviews -->#}
+{##}
+{#                                <!-- //deals -->#}
+{#                            </div>#}
+{#                            <div class="left-ads-display col-lg-9">#}
+{##}
+{#                                {% include "browse/restaurant_list.html" %}#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                    </div>#}
+
+                    <div class="customer-rev left-side">
+                        <h3 class="agileits-sear-head">Customer Rating</h3>
+                        <ul class="rating_group">
+
+                            <li>
+                                <style>
+                                    .rating_btn {
+                                        border: none;
+                                        outline: none;
+                                        background: transparent;
+                                    }
+
+                                    .rating_btn_clicked {
+                                        background: #953b39;
+                                    }
+                                </style>
+                                <script>
+                                    $(document).ready(function () {
+                                        $('.rating_btn').click(function () {
+
+                                            $(".rating_btn").removeClass('rating_btn_clicked');
+                                            $(this).toggleClass('rating_btn_clicked');
+                                        });
+                                    });
+
+                                </script>
+                                <button class="rating_btn" name="5">
+                                    {% for j in "12345" %}
+                                        <i class="fas fa-star"></i>
+                                    {% endfor %}
+                                </button>
+                                <span>5.0</span>
+
+                            </li>
+                            <li>
+
+                                <button class="rating_btn" type="submit" form="rating_form" name="4">
+                                    {% for j in "1234" %}
+                                        <i class="fas fa-star"></i>
+                                    {% endfor %}
+                                    {% for j in "5" %}
+                                        <i class="far fa-star"></i>
+                                    {% endfor %}
+                                </button>
+                                <span>And Up</span>
+
+                            </li>
+
+                            <li>
+
+                                <button class="rating_btn" type="submit" form="rating_form" name="3">
+                                    {% for j in "123" %}
+                                        <i class="fas fa-star"></i>
+                                    {% endfor %}
+                                    {% for j in "45" %}
+                                        <i class="far fa-star"></i>
+                                    {% endfor %}
+                                </button>
+                                <span>And Up</span>
+
+                            </li>
+                            <li>
+
+                                <button class="rating_btn" type="submit" form="rating_form" name="2">
+                                    {% for j in "12" %}
+                                        <i class="fas fa-star"></i>
+                                    {% endfor %}
+                                    {% for j in "345" %}
+                                        <i class="far fa-star"></i>
+                                    {% endfor %}
+                                </button>
+                                <span>And Up</span>
+
+                            </li>
+                            <li>
+
+                                <button class="rating_btn" type="submit" form="rating_form" name="1">
+                                    {% for j in "1" %}
+                                        <i class="fas fa-star"></i>
+                                    {% endfor %}
+                                    {% for j in "2345" %}
+                                        <i class="far fa-star"></i>
+                                    {% endfor %}
+                                </button>
+                                <span>And Up</span>
+
+                            </li>
+
+
+                            <li>
+
+                                <button class="rating_btn" type="submit" form="rating_form" name="0" style="background: lightskyblue">
+                                    <span style=" font-weight: bold;font-size: large">All rating</span>
+                                </button>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <style>
+
+
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                        }
+
+                        .menu {
+                            display: block;
+                            position: relative;
+                            cursor: pointer;
+                        }
+
+                        .menu-title {
+                            display: block;
+                            width: 100%;
+                            padding: 12px 0 0;
+                            background: #9dc852;
+                            text-align: center;
+                            color: #fff;
+                            font-weight: bold;
+                        {#text-transform: uppercase;#} transition: 0.3s background-color;
+                        }
+
+                        .menu-title:before {
+                            content: "";
+                            display: block;
+                            height: 0;
+                            border-top: 5px solid #9dc852;
+                            border-left: 75px solid transparent;
+                            border-right: 75px solid transparent;
+                            border-bottom: 0 solid #ddd;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            z-index: 101;
+                            transition: 0.2s 0.2s border-top ease-out, 0.3s border-top-color;
+                        }
+
+                        .menu-title:hover {
+                            background: #8db842;
+                        }
+
+                        .menu-title:hover:before {
+                            border-top-color: #8db842;
+                        }
+
+                        .menu:hover > .menu-title:before {
+                            border-top-width: 0;
+                            transition: 0.2s border-top-width ease-in, 0.3s border-top-color;
+                        }
+
+                        .menu-title:after {
+                            content: "";
+                            display: block;
+                            height: 0;
+                            border-left: 75px solid transparent;
+                            border-right: 75px solid transparent;
+                            border-bottom: 0 solid #ebebeb;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            z-index: 101;
+                            transition: 0.2s border-bottom ease-in;
+                        }
+
+                        .menu:hover > .menu-title:after {
+                            border-bottom-width: 5px;
+                            transition: 0.2s 0.2s border-bottom-width ease-out;
+                        }
+
+                        .menu-dropdown {
+                            min-width: 100%;
+                            padding: 15px 0;
+                            position: absolute;
+                            background: #ebebeb;
+                            z-index: 100;
+                            transition: 0.5s padding, 0.5s background;
+                        }
+
+                        .menu-dropdown:after {
+                            content: "";
+                            display: block;
+                            height: 0;
+                            border-top: 5px solid #ebebeb;
+                            border-left: 75px solid transparent;
+                            border-right: 75px solid transparent;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            z-index: 101;
+                            transition: 0.5s border-top;
+                        }
+
+                        .menu:not(:hover) > .menu-dropdown {
+                            padding: 4px 0;
+                            background: #ddd;
+                            z-index: 99;
+                        }
+
+                        .menu:not(:hover) > .menu-dropdown:after {
+                            border-top-color: #ddd;
+                        }
+
+                        .menu:not(:hover) > .menu-title:after {
+                            border-bottom-color: #ddd;
+                        }
+
+                        .menu-dropdown > * {
+                            overflow: hidden;
+                            height: 30px;
+                            padding: 5px 10px;
+                            background: rgba(0, 0, 0, 0);
+                            white-space: nowrap;
+                            transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color;
+                        }
+
+                        .menu-dropdown > *:hover {
+                            background: rgba(0, 0, 0, 0.1);
+                        }
+
+                        .menu:not(:hover) > .menu-dropdown > * {
+                            visibility: hidden;
+                            height: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            margin: 0;
+                            color: rgba(25, 25, 25, 0);
+                            transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
+                            z-index: 99;
+                        }
+
+                        .hList > * {
+                            float: left;
+                        }
+
+
+                    </style>
+                    <div id="mainselection">
+                        <ul class="hList" style="list-style: none">
+                            <li>
+                                <a  class="menu">
+                                    <h2 class="menu-title"> Category <i class="fas fa-caret-down"></i></h2>
+                                    <ul class="menu-dropdown" id="category_dropdown">
+                                        {% for cat in categories %}
+                                            <li class="category_dropdown">{{ cat }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="left-ads-display col-lg-9 product_list">
+
+                    {% include "browse/product_list.html" %}
+
+                </div>
+
+
+
+
+
+                <script>
+                    var ratingVal = 0;
+                    var min_range = 0;
+                    var max_range = 10000;
+                    var menu_name;
+                    var rest_name;
+                    var category;
+                    var only_offer;
+                    $(document).ready(function () {
+                        $('#rest_select').on('change', function () {
+                            alert(this.value);
+                        });
+                        $(".rating_group button").click(function () {
+                            ratingVal = this.name;
+                            $('#get_menus').click();
+                            {#alert(rating);#}
+                        });
+                        $(".price_range button").click(function () {
+                            min_range = $('#min_range').val();
+                            max_range = $('#max_range').val();
+                            {#$('#get_menus').click();#}
+
+                        });
+
+                        $('#menu_search').on('keypress', function (e) {
+                            var code = e.keyCode || e.which;
+                            if (code == 13) {
+                                menu_name = $("#menu_search").val();
+                                $('#get_menus').click();
+                            }
+                        });
+                        $('.category_dropdown').on('click', function () {
+                            category = this.innerHTML;
+                            $('#get_menus').click();
+
+                        });
+                        $("#get_menus").click(function () {
+                            {#alert(rating);#}
+
+                            $.ajax({
+                                method: "GET",
+                                url: 'filter/',
+                                data: {
+                                    'rating': ratingVal,
+                                    'min_range': min_range,
+                                    'max_range': max_range,
+                                    'menu_name': menu_name,
+                                    'category': category
+                                    {#'only_offer': only_offer#}
+                                },
+                                responseTime: 200,
+
+                                success: function (data) {
+                                    {#console.log(data);#}
+                                    {#document.getElementsByClassName('product_list').innerHTML = data;#}
+
+                                    $('.product_list').empty().append(data);
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+{% endblock %}
