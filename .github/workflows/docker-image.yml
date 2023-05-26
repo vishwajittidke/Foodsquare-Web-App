@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
     - name: Build the Docker image
+      uses: actions/checkout@v3
+    - name: build
       run: |
         docker build . -t vishwajittidke/foodsquare:latest
     - name: publish
