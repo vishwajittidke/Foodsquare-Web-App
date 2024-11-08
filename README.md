@@ -79,11 +79,11 @@ Docker Hub Repo: https://hub.docker.com/r/vishwajittidke/foodsquare
 ***Browse Cuisines***
 ![Browse Cuisines](https://github.com/user-attachments/assets/a522dee5-e424-4564-b3bd-fcc5e38fff5e)
 
+
 ***Payment***
 ![bkash (2)](https://github.com/user-attachments/assets/ff622b02-6784-42bc-a8b9-9ba1a2a3ed16)
 
-***Branch Open***
-![Branch Open](https://raw.githubusercontent.com/Subangkar/Foodsquare-Web-App/master/Foodsquare_Screenshots/rest_branch_reg.png?token=AHSCFFSFY4IOR3WV7VFXAJ27HALL4)
+
 ***Add Items***
 ![Add Items](https://raw.githubusercontent.com/Subangkar/Foodsquare-Web-App/master/Foodsquare_Screenshots/additem.png?token=AHSCFFQ2SC7HM7GV5FJBBEC7HALMK)
 
