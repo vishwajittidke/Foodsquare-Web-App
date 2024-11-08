@@ -27,7 +27,7 @@ This repo contains the web app for this system implemented in Django-2.2 with Mo
         docker-compose up
         ```
         - now browse the site at http://localhost:8000/ 
-        - **N.B.** Here [remote docker image](https://hub.docker.com/vishwajittidke/foodsquare) is used in docker compose. Alternately, you can build a new docker image using `Dockerfile` & use it in composer.
+        - **N.B.** Here [remote docker image](https://hub.docker.com/repository/docker/vishwajittidke/foodsquare/general) is used in docker compose. Alternately, you can build a new docker image using `Dockerfile` & use it in composer.
 
     - Or, **Python Environment/Database setup**
         - install postgres database
