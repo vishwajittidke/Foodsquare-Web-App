@@ -18,7 +18,7 @@ This repo contains the web app for this system implemented in Django-2.2 with Mo
   
 **How to run:**
  - Clone the [github repo](https://github.com/vishwajittidke/Foodsquare-Web-App)
- - Now you can either run in [docker containers](https://www.docker.com/) of a [pre-built image on docker hub](https://hub.docker.com/r/subangkar/foodsquare) of this repo **or** create an python & database environment yourself
+ - Now you can either run in [docker containers](https://www.docker.com/) of a [pre-built image on docker hub](https://hub.docker.com/r/vishwajittidke/foodsquare) of this repo **or** create an python & database environment yourself
     - **Docker**
         - install [docker](https://docs.docker.com/engine/install/) & [docker-compose](https://docs.docker.com/compose/install/) on your system (if not installed)
         - move to the project directory & start the docker containers using the following commands
