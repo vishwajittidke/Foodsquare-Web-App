@@ -73,7 +73,8 @@ Docker Hub Repo: https://hub.docker.com/r/vishwajittidke/foodsquare
 ***
 
 ## Sample Usage:
-***Homepage*** ![Homepage](https://raw.githubusercontent.com/Subangkar/Foodsquare-Web-App/master/Foodsquare_Screenshots/website_homepage.png?token=AHSCFFTRYRD66DB3CGMUMKK7HAKDY)
+***Homepage*** ![Homepage](![website_homepage (2)](https://github.com/user-attachments/assets/f7d62664-3b7b-4789-a91e-fb0e66d5f514)
+)
 
 
 
