@@ -77,7 +77,7 @@ Docker Hub Repo: https://hub.docker.com/r/vishwajittidke/foodsquare
 
 
 ***Browse Cuisines***
-![Browse Cuisines](<img width="1417" alt="search" src="https://github.com/user-attachments/assets/35db9be1-be5d-45fe-a66b-b73db1851f65">)
+![Browse Cuisines](https://github.com/user-attachments/assets/a522dee5-e424-4564-b3bd-fcc5e38fff5e)
 
 ***Payment***
 
