@@ -83,11 +83,19 @@ DEFAULT_HOST = 'www'
 
 SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY', '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')
 
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_HOST_USER = 'apikey'
+# EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+
+# Email config (disable SendGrid for now)
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 TEMPLATES = [
     {
