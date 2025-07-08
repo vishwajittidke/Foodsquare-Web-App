@@ -19,10 +19,10 @@ def pretty_request(request):
 		'{body}'
 	).format(
 		method=request.method,
-		content_length=request.META['CONTENT_LENGTH'],
-		content_type=request.META['CONTENT_TYPE'],
+		content_length=request.META.get['CONTENT_LENGTH'],
+		content_type=request.META.get['CONTENT_TYPE'],
 		headers=headers,
-		body=request.body,
+		body=request.body.decode('utf-8', errors='replace') if request.body else ''
 	)
 
 
