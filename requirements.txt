@@ -17,8 +17,4 @@ psycopg2==2.8.3
 virtualenv-clone==0.5.3
 whitenoise==4.1.3
 wincertstore==0.2
-pip install whitenoise
-pip freeze > requirements.txt
-pip install gunicorn
-pip freeze > requirements.txt
-
+gunicorn
