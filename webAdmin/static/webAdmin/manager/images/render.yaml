@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: foodsquare-web
+    env: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: "gunicorn foodsquare.wsgi:application"
+    plan: free
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: foodsquare.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: foodsquare.onrender.com
+      - key: DEBUG
+        value: False
+      - key: DATABASE_URL
+        fromDatabase:
+          name: foodsquare-db
+          property: connectionString
+
+databases:
+  - name: foodsquare-db
+    plan: free
