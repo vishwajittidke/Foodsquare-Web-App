@@ -2,10 +2,16 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-import dotenv
+# import dotenv
 
 # ✅ Load environment variables from a .env file
-dotenv.load_dotenv()
+# dotenv.load_dotenv()
+
+try:
+    import dotenv
+    dotenv.load_dotenv()
+except ImportError:
+    pass  # Don't crash if python-dotenv isn't installed
 
 def main():
     # ✅ Set default settings module for Django
