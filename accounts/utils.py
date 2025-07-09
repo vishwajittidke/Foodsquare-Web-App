@@ -51,24 +51,48 @@ def send_forgotten_username_email(email, username):
 	send_mail(email, 'forgotten_username', context)
 
 
-def pretty_request(request):
-	headers = ''
-	for header, value in request.META.items():
-		if not header.startswith('HTTP'):
-			continue
-		header = '-'.join([h.capitalize() for h in header[5:].lower().split('_')])
-		headers += '{}: {}\n'.format(header, value)
+# def pretty_request(request):
+# 	headers = ''
+# 	for header, value in request.META.items():
+# 		if not header.startswith('HTTP'):
+# 			continue
+# 		header = '-'.join([h.capitalize() for h in header[5:].lower().split('_')])
+# 		headers += '{}: {}\n'.format(header, value)
 
-	return (
-		'{method} HTTP/1.1\n'
-		'Content-Length: {content_length}\n'
-		'Content-Type: {content_type}\n'
-		'{headers}\n\n'
-		'{body}'
-	).format(
-		method=request.method,
-		content_length=request.META['CONTENT_LENGTH'],
-		content_type=request.META['CONTENT_TYPE'],
-		headers=headers,
-		body=request.body,
-	)
+# 	return (
+# 		'{method} HTTP/1.1\n'
+# 		'Content-Length: {content_length}\n'
+# 		'Content-Type: {content_type}\n'
+# 		'{headers}\n\n'
+# 		'{body}'
+# 	).format(
+# 		method=request.method,
+# 		content_length=request.META['CONTENT_LENGTH'],
+# 		content_type=request.META['CONTENT_TYPE'],
+# 		headers=headers,
+# 		body=request.body,
+# 	)
+def pretty_request(request):
+    headers = ''
+    for header, value in request.META.items():
+        if not header.startswith('HTTP'):
+            continue
+        header = '-'.join([h.capitalize() for h in header[5:].lower().split('_')])
+        headers += '{}: {}\n'.format(header, value)
+
+    # Use .get() to avoid KeyError if CONTENT_LENGTH is missing
+    content_length = request.META.get('CONTENT_LENGTH', 'Unknown')
+
+    return (
+        '{method} HTTP/1.1\n'
+        'Content-Length: {content_length}\n'
+        'Content-Type: {content_type}\n'
+        '{headers}\n\n'
+        '{body}'
+    ).format(
+        method=request.method,
+        content_length=content_length,
+        content_type=request.META.get('CONTENT_TYPE', 'Unknown'),  # Default to 'Unknown' for missing 'CONTENT_TYPE'
+        headers=headers,
+        body=request.body,
+    )
